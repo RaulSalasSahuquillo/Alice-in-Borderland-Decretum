@@ -46,7 +46,7 @@ public class IntroActivity extends AppCompatActivity {
             player = new ExoPlayer.Builder(this).build();
             playerView.setPlayer(player);
 
-            Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.intro);
+            Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.game1);
             player.setMediaItem(MediaItem.fromUri(uri));
             player.prepare();
             if (resumePositionMs != null) player.seekTo(resumePositionMs);
