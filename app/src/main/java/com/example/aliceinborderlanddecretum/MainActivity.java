@@ -54,8 +54,6 @@ public class MainActivity extends AppCompatActivity {
     private void goToScene(String sceneId, boolean autosave) {
         currentState.currentSceneId = sceneId;
         if (autosave) SaveManager.save(this, currentState);
-
-        // TODO: aquí pinta tu escena según sceneId
         // Puedes usar Fragments o simplemente cambiar vistas/estado.
         // Ejemplo mínimo (placeholder):
         Toast.makeText(this, "Escena: " + sceneId, Toast.LENGTH_SHORT).show();
