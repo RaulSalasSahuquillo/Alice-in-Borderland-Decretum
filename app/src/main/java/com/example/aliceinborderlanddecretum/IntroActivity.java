@@ -33,7 +33,6 @@ public class IntroActivity extends AppCompatActivity {
         // Bloquear botón atrás con el API nuevo
         getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
             @Override public void handleOnBackPressed() {
-                // no hacemos nada (bloqueado)
             }
         });
 
