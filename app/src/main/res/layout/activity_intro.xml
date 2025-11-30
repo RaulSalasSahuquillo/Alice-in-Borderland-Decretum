@@ -17,6 +17,7 @@
         android:layout_height="wrap_content"
         android:text="Skip"
         android:layout_margin="16dp"
+        app:backgroundTint="#F44336"
         android:layout_gravity="top|end"/>
 </FrameLayout>
 

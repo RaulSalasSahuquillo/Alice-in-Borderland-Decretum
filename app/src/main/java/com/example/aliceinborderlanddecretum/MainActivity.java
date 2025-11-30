@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
             if (sceneId.equals("scene_001")) {
                 tvSceneTextView.setText("GAME: おおあめ (Escena 1)");
             } else if (sceneId.equals("scene_002")) {
-                tvSceneTextView.setText("¡Escena 2! El juego ha cambiado.");
+                tvSceneTextView.setText("GAME: おおあめ [CARD: 1]");
             } else {
                 tvSceneTextView.setText("Escena: " + sceneId);
             }

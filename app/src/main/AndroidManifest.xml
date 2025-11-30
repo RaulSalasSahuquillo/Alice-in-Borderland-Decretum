@@ -7,28 +7,27 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="Alice in Borderland: Decretum"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AliceInBorderlandDECRETUM">
+        android:theme="@style/Theme.AliceInBorderlandDECRETUM"
+        tools:targetApi="31">
 
-        <!-- Pantalla de inicio -->
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="true"
+            android:screenOrientation="landscape"> <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
-        <activity android:name=".GamePlay1" />
 
-        <!-- Pantalla de vídeo de introducción -->
         <activity
-            android:name=".IntroActivity"
+            android:name=".GamePlay1"
             android:exported="false"
-            android:screenOrientation="sensorLandscape" />
-        <!-- Quita screenOrientation si tu juego es vertical -->
-    </application>
+            android:screenOrientation="landscape" /> <activity
+        android:name=".IntroActivity"
+        android:exported="false"
+        android:screenOrientation="landscape" /> </application>
 
 </manifest>

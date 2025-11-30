@@ -49,11 +49,12 @@
 
     <ImageView
         android:id="@+id/miNuevaImagen"
-        android:layout_width="499dp"
-        android:layout_height="792dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="299dp"
+        android:layout_height="442dp"
+        android:layout_marginTop="120dp"
         android:src="@drawable/elloco0"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvScene" />
 </androidx.constraintlayout.widget.ConstraintLayout>
