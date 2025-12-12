@@ -5,56 +5,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FDF0F3">
 
-    <!-- Placeholder de escena -->
+    <ImageView
+        android:id="@+id/miNuevaImagen"
+        android:layout_width="280dp"
+        android:layout_height="252dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/elloco0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="H,2:3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tvScene"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="GAME: おおあめ"
-        android:textSize="22sp"
-        android:padding="16dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="28sp"
+        android:textStyle="bold"
         android:textColor="#FF0000"
-        android:textAlignment="center"
-        android:fontFamily="@font/m_plus_1m_regular" />
+        android:gravity="center"
+        android:fontFamily="@font/m_plus_1m_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/miNuevaImagen"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext"
+        app:layout_constraintVertical_chainStyle="packed" />
 
-    <!-- Botón demo: siguiente escena (opcional) -->
     <Button
         android:id="@+id/btnNext"
-        android:layout_width="223dp"
-        android:layout_height="61dp"
-        android:layout_margin="16dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
         android:text="PLAY"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvScene"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:backgroundTint="#4CAF50"
-        android:textColor="#FFFFFF" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/miNuevaImagen"
+        app:layout_constraintTop_toBottomOf="@+id/tvScene"
+        app:layout_constraintBottom_toTopOf="@+id/btnNewGame" />
 
     <Button
         android:id="@+id/btnNewGame"
-        android:layout_width="223dp"
-        android:layout_height="61dp"
-        android:layout_margin="16dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
         android:text="GIVE UP"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnNext"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:backgroundTint="#F44336"
-        android:textColor="#FFFFFF" />
-
-    <ImageView
-        android:id="@+id/miNuevaImagen"
-        android:layout_width="299dp"
-        android:layout_height="442dp"
-        android:layout_marginTop="120dp"
-        android:src="@drawable/elloco0"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvScene" />
+        app:layout_constraintEnd_toStartOf="@+id/miNuevaImagen"
+        app:layout_constraintTop_toBottomOf="@+id/btnNext"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

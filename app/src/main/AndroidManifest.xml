@@ -25,7 +25,12 @@
         <activity
             android:name=".GamePlay1"
             android:exported="false"
-            android:screenOrientation="landscape" /> <activity
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GamePlay2"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
         android:name=".IntroActivity"
         android:exported="false"
         android:screenOrientation="landscape" /> </application>
