@@ -29,7 +29,7 @@ public class GamePlay2 extends AppCompatActivity {
 
         // 2. CONFIGURAR EL VIDEO
         // "android.resource://" + paquete + "/" + R.raw.nombre_video
-        String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.video_intro;
+        String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.the_fool;
         Uri uri = Uri.parse(videoPath);
         videoIntro.setVideoURI(uri);
 
