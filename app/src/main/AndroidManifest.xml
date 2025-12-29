@@ -29,7 +29,8 @@
         <activity
             android:name=".GamePlay2"
             android:exported="false"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
         android:name=".IntroActivity"
         android:exported="false"
